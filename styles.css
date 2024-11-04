@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+    padding: 30px;
+    background-color: #79110b;
+    color: #ffffff;
+}
+
+h1, h2, h3 {
+    color: #e39f88;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Navbar */
+header {
+    background-color: #e39f88;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('assets/images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Container for the menu items */
+.menu-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #F7F5F2; /* Light, warm background */
+}
+
+/* Individual menu item boxes */
+.menu-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 300px;
+    padding: 20px;
+}
+
+/* Menu item title */
+.menu-item h3 {
+    color: #D35400; /* Warm, appetizing color */
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+/* Menu item description */
+.menu-item p {
+    color: #3B3A30; /* Dark text for readability */
+    line-height: 1.5;
+    font-size: 1em;
+}
+
+
+.hero h1 {
+    font-size
+}
