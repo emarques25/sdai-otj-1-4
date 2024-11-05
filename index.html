@@ -1,112 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Dish Food Truck & Restaurant</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa; /* Light background color */
-            color: #333; /* Dark text color for contrast */
-        }
-        
-        .navbar {
-            background-color: #ff6347; /* Tomato color */
-            padding: 10px;
-            text-align: center;
-        }
-        
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-            background-color: #ffe4e1; /* Misty Rose */
-        }
-        
-        .hero h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-
-        .about,
-        .menu,
-        .hours,
-        .location {
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff; /* White background for sections */
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .menu-item {
-            margin: 15px 0;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            background-color: #fdfd96; /* Light yellow */
-        }
-        
-        .menu-item h3 {
-            margin: 0;
-            color: #ff6347; /* Tomato color */
-        }
-        
-        .menu-item .price {
-            font-weight: bold;
-            color: #28a745; /* Green for prices */
-        }
-
-        h2 {
-            border-bottom: 2px solid #ff6347; /* Underline for section headings */
-            padding-bottom: 5px;
-        }
-
-        /* Hours section styling */
-        .hours ul {
-            list-style-type: none; /* Remove bullet points */
-            padding: 0;
-        }
-        
-        .hours li {
-            margin: 5px 0;
-        }
-
-        address {
-            font-style: normal; /* Normal style for address */
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>  
 
     <!-- Navbar -->
-    <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#hours">Hours</a>
-        <a href="#about">About Us</a>
-        <a href="#location">Location</a>
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#hours">Hours</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#location">Location</a></li>
+        </ul>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <img src="assets/images/pexels-edwardeyer-1247755.jpg" alt="Company Logo" width="150" height="150">
         <h1>Welcome to Our Restaurant</h1>
-        <p>Experience the best cuisine and hospitality.</p>
+        <h2>Experience the best cuisine and hospitality.</h2>
     </section>
       
     <!-- About Us Section -->
     <section id="about" class="about">
-        <h2>About Us</h2>
+       <p> <h2>About Us</h2></p>
         <p>What's so great about combining the worlds of coding and cuisine? 
             Dev Dish was founded by two passionate developers who turned their 
             love for software into a culinary adventure. After years of coding 
@@ -125,9 +47,9 @@
 
     <!-- Menu Section -->
 <section id="menu" class="menu">
-    <h2>The Dev Dish Quarterly Menu</h2>
-    <p>Explore our diverse menu featuring a wide variety of delicious dishes, 
-        from appetizers to desserts, all crafted with fresh, high-quality ingredients.</p>
+    <center><h2>The Dev Dish Quarterly Menu</h2>
+    <p><center>Explore our diverse menu featuring a wide variety of delicious dishes, 
+        from appetizers to desserts, all crafted with fresh, high-quality ingredients.</center></p>
     
     <!-- Wraps Section -->
     <h3>Wraps</h3>
@@ -186,6 +108,7 @@
         <p>Tortilla chips and salsa verde.</p>
         <p class="price">$4.99</p>
     </div>
+</center>
 </section>
 
     <!-- Hours Section -->
