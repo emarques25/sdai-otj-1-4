@@ -3,26 +3,28 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 30px;
     background-color: #453e3d;
-    color:  #c19d97;
-    line-height: 2em; /* 2em line spacing */
+    color:  #453e3d;
+    line-height: 3em; /* 2em line spacing */
     margin: 0; /* Remove default margin */
-    padding: 20px; /* Add some padding around the body */
+    padding: 100px; /* Add some padding around the body */
 }
+
 
 h1 {
     font-family: 'Georgia', serif;  /* Font for <h1> */
     font-size: 3.5em;                /* Larger size for <h1> */
-    color: #A3C12A;                     /* Shared color */
+    color: #453e3d;                     /* Shared color */
     line-height: 1.2;                /* Shared line height */
     margin: 0.5em 0;                 /* Shared margin */
     text-transform: uppercase;       /* Make text all uppercase */
     letter-spacing: 4px;             /* Character spacing */
 }
 
+
 h2 {
     font-family: 'Georgia', serif;  /* Font for <h2> */
     font-size: 1.5em;                 /* Smaller size for <h2> */
-    color: #FF4F3D;                    /* Shared color */
+    color:#A3C12A;                    /* Shared color */
     line-height: 1.2;               /* Shared line height */
     margin: 0.5em 0;                /* Shared margin */
     text-transform: uppercase;       /* Make text all uppercase */
@@ -34,18 +36,56 @@ p {
     line-height: 2;
 }
 
+
+/* Hero Section Styles */
+
+.hero {
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    max-width: 1200px; /* Maximum width for the section */
+    margin: 0 auto; /* Center the section */
+    padding: 5%; /* Padding for spacing */
+    background-color:#FF4F3D; /* Background color for contrast */
+    border-radius: 40px; /* Slightly rounded corners */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: 4% 0; /* Spacing above and below the section */
+}
+
+.hero-text {
+    flex: 1; /* Take up available space */
+    color: white; /* Text color */
+    padding: 20px; /* Padding around the text */
+}
+
+.hero-image img {
+    max-width: 100%; /* Ensure image is responsive */
+    border-radius:600px; /* Round image corners */
+}
+
+/* Button Styles */
+.cta-button {
+    display: inline-block; /* Allow padding and margin */
+    padding: 10px 20px; /* Button padding */
+    background-color: #FF4F3D; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Round button corners */
+    margin-top: 15px; /* Space above button */
+}
+
+
 .about {
-    background-color: #c19d97; /* Light background for contrast */
-    border: 2px solid #FF4F3D; /* Bright coral border for emphasis */
-    border-radius: 10px; /* Rounded corners for a softer look */
-    padding: 20px; /* Spacing inside the section */
-    margin: 20px 0; /* Spacing above and below the section */
-    box-shadow: 0 8px 10px #FF4F3D;
-    text-align: center; /* Centered text */
+    background-color: #453e3d; 
+    border: 0px none #FF4F3D; /* Bright coral border for emphasis */
+    border-radius: 100px; /* Rounded corners for a softer look */
+    padding: 2%px; /* Spacing inside the section */
+    margin: 6% 0; /* Spacing above and below the section */
+
+    text-align: left; 
 }
 
 .about h2, .about p {
-    color: #453e3d; /* Purple color for both heading and paragraph */
+    color:   #c19d97; /* Purple color for both heading and paragraph */
     line-height: 1.6; /* Increased line height for better readability */
 }
 
@@ -55,13 +95,12 @@ p {
 }
 
 
-
-
-
 /* Navigation bar styling */
 nav {
     background-color: #c19d97; /* Dark charcoal background for contrast */
-    padding: 1em 0;
+    padding: .5em 0;
+    box-shadow: 0 8px 10px #FF4F3D;
+    border-radius: 75px
 }
 
 nav ul {
@@ -96,56 +135,166 @@ nav ul li a.active {
     color: #ffffff;
 }
 
-
-
-
-
-
-
-
-/* Hero Section */
-.hero {
-    background-image: url('assets/images/hero-image.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
+/* Dashed Divider Styles */
+.dashed-divider {
+    border-top: 2px dashed #D9534F; /* Dashed border with color */
+    margin: 20px 0; /* Margin above and below the divider */
+    width: 100%; /* Full width */
 }
 
-/* Container for the menu items */
+
+/* Menu Section Styles */
+.menu 
+
+
+.menu h2 {
+    text-align: center; /* Center the menu title */
+    margin-bottom: 20px; /* Space below title */
+}
+
 .menu-section {
-
-    gap: 20px;
-    padding: 10px 10px;
-    background-color: #F7F5F2; /* Light, warm background */
+    display: flex; /* Use Flexbox for each menu section */
+    flex-direction: column; /* Stack items vertically within sections */
+    margin-bottom: 30px; /* Space between sections */
 }
 
-/* Individual menu item boxes */
+.menu-section h3 {
+    text-align: center; /* Center section titles */
+    margin: 10px 0; /* Space around section titles */
+}
+
 .menu-item {
-    background-color: #453e3d ;
-    border-radius: 15px;
-    box-shadow: 0 8px 10px #FF4F3D; /* Soft shadow for depth */
-    width: 550px;
-    padding: 30px;
+    display: flex; /* Use Flexbox for item layout */
+    justify-content: space-between; /* Space between item name and price */
+    padding: 10px; /* Padding for menu items */
+    border: 1px dashed #FF4F3D; /* Dashed border for items */
+    border-radius: 10px; /* Rounded corners for items */
+    background-color: white; /* Background for items */
 }
 
-/* Menu item title */
-.menu-item h3 {
-    color: #FF4F3D; /
-    font-size: 1.5em;
-    margin: 0 0 10px;
-    font-weight: bold;
+.menu-item h4 
+{
+    margin: 0; /* Remove default margin */
 }
 
-/* Menu item description */
-.menu-item p {
-    color: #A3C12A; /* Dark text for readability */
-    line-height: 1.5;
-    font-size: 1em;
+.price {
+    font-weight: bold; /* Bold price */
+    color: #D9534F; /* Price color */
+}
+
+.menu {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 8px 10px #FF4F3D;
+    border-radius: 75px;
+    background-color: #c19d97;
+    margin: 4% 0; /* Spacing above and below the section */
+}
+
+h2 {
+    text-align: center; /* Center the main heading */
+    color:#453e3d  
+    font-size: 2em; /* Size for the main heading */
+}
+
+h3 {
+    color: #453e3d; /* Color for subheadings */
+    font-size: 1.5em; /* Size for subheadings */
+    margin-top: 20px; /* Spacing above subheadings */
+}
+
+.menu-category {
+    margin-bottom: 30px; /* Spacing below each category */
+}
+
+.menu-item {
+    margin: 10px 0; /* Spacing between individual items */
+    padding: 10px;
+    border: 1px solid #D9534F; /* Border color for menu items */
+    box-shadow: 0 8px 10px #FF4F3D;
+    border-radius: 75px
+    background-color: #ffffff; /* White background for individual items */
+}
+
+h4 {
+    margin: 0; /* Remove default margin for item titles */
+    color: #333; /* Dark color for item titles */
+}
+
+.price {
+    font-weight: bold; /* Bold price text */
+    color: #D9534F; /* Price color */
 }
 
 
-.hero h1 {
-    font-size
+/* Hours Section Styles */
+.hours {
+    max-width: 800px; /* Max width for the hours section */
+    margin: 0 auto; /* Center the section */
+    padding: 20px; /* Padding inside the box */
+    background-color: #c19d97; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 20px; /* Space above the section */
+}
+
+
+.hours h2 {
+    text-align: center; /* Center the title */
+    color: #D9534F; /* Title color */
+    font-size: 2em; /* Title size */
+}
+
+.hours-item {
+    margin: 10px 0; /* Margin between each item */
+    padding: 10px; /* Padding inside the box */
+    border: 1px solid #D9534F; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff8f5; /* Light background for hours item */
+}
+
+.hours-item p {
+    margin: 5px 0; /* Margin for paragraph items */
+}
+
+.hours-item strong {
+    color: #333; /* Dark color for days */
+}
+
+.hours-item span {
+    color: #D9534F; /* Color for time details */
+}
+
+
+/* Location Section Styles */
+.location {
+    max-width: 800px; /* Max width for the location section */
+    margin: 0 auto; /* Center the section */
+    padding: 20px; /* Padding inside the box */
+    background-color: #453e3d; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px; /* Space above the section */
+}
+
+.location h2 {
+    text-align: center; /* Center the title */
+    color: #D9534F /* Title color */
+    font-size: 2em; /* Title size */
+}
+
+.location-item {
+    margin: 10px 0; /* Margin between each item */
+    padding: 10px; /* Padding inside the box */
+    border: 1px solid #D9534F; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #c19d97; /* Light background for location item */
+}
+
+.location-item p {
+    margin: 5px 0; /* Margin for paragraph items */
+}
+
+.location-item strong {
+    color: #333; /* Dark color for labels */
 }
