@@ -24,7 +24,7 @@ h1 {
 h2 {
     font-family: 'Georgia', serif;  /* Font for <h2> */
     font-size: 1.5em;                 /* Smaller size for <h2> */
-    color:#A3C12A;                    /* Shared color */
+    color:#fcfff0;                    /* Shared color */
     line-height: 1.2;               /* Shared line height */
     margin: 0.5em 0;                /* Shared margin */
     text-transform: uppercase;       /* Make text all uppercase */
