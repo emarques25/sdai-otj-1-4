@@ -283,9 +283,9 @@ h4 {
 .hours-item {
     margin: 10px 0; /* Margin between each item */
     padding: 10px; /* Padding inside the box */
-    border: 1px solid #D9534F; /* Border color */
-    border-radius: 5px; /* Rounded corners */
-    background-color: #fff8f5; /* Light background for hours item */
+    border: 1px solid #D9534F; 
+    border-radius: 5px; 
+    background-color: #fff8f5; 
 }
 
 .hours-item p {
@@ -336,10 +336,12 @@ h4 {
 
 /* Footer container */
 .site-footer {
-    background-color: #f9f9f9;
+    background-color: #fff8f5;
     padding: 20px;
     text-align: center;
     border-top: 2px solid #ccc;
+    box-shadow: 0 8px 10px #FF4F3D;
+    border-radius: 50px
 }
 
 /* Social media icons container */
