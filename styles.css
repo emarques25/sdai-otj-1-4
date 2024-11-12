@@ -247,6 +247,11 @@ h4 {
 
 }
 
+
+/* Hover effect for images */
+.photo:hover {
+    transform: scale(1.05); /* Slightly enlarge the image container */
+}
 /* Styling for each photo wrapper */
 .photo {
     flex: 1; /* Allow photos to scale evenly */
@@ -327,4 +332,40 @@ h4 {
 
 .location-item strong {
     color: #333; /* Dark color for labels */
+}
+
+/* Footer container */
+.site-footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ccc;
+}
+
+/* Social media icons container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+/* Links to social media */
+.social-link img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect on icons */
+.social-link img:hover {
+    transform: scale(1.1);
+}
+
+/* Copyright text */
+.copyright {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
 }
