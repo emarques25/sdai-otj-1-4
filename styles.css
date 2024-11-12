@@ -4,31 +4,31 @@ body {
     margin: 30px;
     background-color: #453e3d;
     color:  #453e3d;
-    line-height: 3em; /* 2em line spacing */
-    margin: 0; /* Remove default margin */
-    padding: 100px; /* Add some padding around the body */
+    line-height: 3em; 
+    margin: 0; 
+    padding: 100px; 
 }
 
 
 h1 {
-    font-family: 'Georgia', serif;  /* Font for <h1> */
-    font-size: 3.5em;                /* Larger size for <h1> */
-    color: #453e3d;                     /* Shared color */
-    line-height: 1.2;                /* Shared line height */
-    margin: 0.5em 0;                 /* Shared margin */
-    text-transform: uppercase;       /* Make text all uppercase */
-    letter-spacing: 4px;             /* Character spacing */
+    font-family: 'Georgia', serif;  
+    font-size: 3.5em;                
+    color: #453e3d;                     
+    line-height: 1.2;                
+    margin: 0.5em 0;                 
+    text-transform: uppercase;       
+    letter-spacing: 4px;             
 }
 
 
 h2 {
-    font-family: 'Georgia', serif;  /* Font for <h2> */
-    font-size: 1.5em;                 /* Smaller size for <h2> */
-    color:#fcfff0;                    /* Shared color */
-    line-height: 1.2;               /* Shared line height */
-    margin: 0.5em 0;                /* Shared margin */
-    text-transform: uppercase;       /* Make text all uppercase */
-    letter-spacing: 4px;             /* Character spacing */
+    font-family: 'Georgia', serif;  
+    font-size: 1.5em;                 
+    color:#fcfff0;                   
+    line-height: 1.2;               
+    margin: 0.5em 0;                
+    text-transform: uppercase;       
+    letter-spacing: 4px;             
 }
 
 
@@ -39,15 +39,15 @@ p {
 
 /* Hero Section Styles */
 .hero {
-    display: flex; /* Use Flexbox for layout */
+    display: flex; 
     align-items: center; /* Center items vertically */
     max-width: 1200px; /* Maximum width for the section */
-    margin: 0 auto; /* Center the section */
-    padding: 5%; /* Padding for spacing */
-    background-color:#FF4F3D; /* Background color for contrast */
-    border-radius: 40px; /* Slightly rounded corners */
+    margin: 0 auto; /
+    padding: 5%; 
+    background-color:#FF4F3D; 
+    border-radius: 40px; 
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    margin: 4% 0; /* Spacing above and below the section */
+    margin: 4% 0; 
 }
 
 .hero-text {
@@ -58,7 +58,7 @@ p {
 
 .hero-image img {
     max-width: 100%; /* Ensure image is responsive */
-    border-radius:600px; /* Round image corners */
+    border-radius:600px; 
 }
 
 /* Button Styles */
@@ -75,28 +75,34 @@ p {
 
 .about {
     background-color: #453e3d; 
-    border: 0px none #FF4F3D; /* Bright coral border for emphasis */
-    border-radius: 100px; /* Rounded corners for a softer look */
-    padding: 2%px; /* Spacing inside the section */
-    margin: 6% 0; /* Spacing above and below the section */
+    border: 0px none #FF4F3D; 
+    border-radius: 100px; 
+    padding: 2%px; 
+    margin: 6% 0; 
 
     text-align: left; 
 }
 
 .about h2, .about p {
-    color:   #c19d97; /* Purple color for both heading and paragraph */
-    line-height: 1.6; /* Increased line height for better readability */
+    line-height: 1.6; /* Increased line height */
+    color:   #A3C12A
 }
 
+.about p {
+    line-height: 1.6; /* Increased line height */
+    color:   #ffffff
+}
+
+
 .about h2 {
-    font-size: 2em; /* Larger font size for prominence */
-    letter-spacing: 1px; /* Slightly increased letter spacing */
+    font-size: 2em; 
+    letter-spacing: 1px; 
 }
 
 
 /* Navigation bar styling */
 nav {
-    background-color: #c19d97; /* Dark charcoal background for contrast */
+    background-color: #c19d97; 
     padding: .5em 0;
     box-shadow: 0 8px 10px #FF4F3D;
     border-radius: 75px
@@ -130,7 +136,7 @@ nav ul li a:hover {
 
 /* Active link styling */
 nav ul li a.active {
-    background-color: #A3C12A; /* Fresh blue for active link */
+    background-color: #A3C12A; 
     color: #ffffff;
 }
 
@@ -152,7 +158,7 @@ nav ul li a.active {
 }
 
 .menu-section {
-    display: flex; /* Use Flexbox for each menu section */
+    display: flex; 
     flex-direction: column; /* Stack items vertically within sections */
     margin-bottom: 30px; /* Space between sections */
 }
@@ -163,7 +169,7 @@ nav ul li a.active {
 }
 
 .menu-item {
-    display: flex; /* Use Flexbox for item layout */
+    display: flex; 
     justify-content: space-between; /* Space between item name and price */
     padding: 10px; /* Padding for menu items */
     border: 1px dashed #FF4F3D; /* Dashed border for items */
@@ -227,16 +233,36 @@ h4 {
 }
 
 
-/* Hours Section Styles */
-.hours {
-    max-width: 800px; /* Max width for the hours section */
-    margin: 0 auto; /* Center the section */
-    padding: 20px; /* Padding inside the box */
-    background-color: #c19d97; /* White background */
-    border-radius: 30px; /* Rounded corners */
-    box-shadow: 0 8px 10px #FF4F3D; 
-    margin-top: 20px; /* Space above the section */
+/* Styling for the gallery container */
+.photo-gallery {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center photos horizontally */
+    gap: 10px; /* Space between photos */
+    padding: 20px;
+    background-color: #A3C12A; /* Light background */
+    border: 2px solid #ccc; /* Optional border */
 }
+
+/* Styling for each photo wrapper */
+.photo {
+    flex: 1; /* Allow photos to scale evenly */
+    max-width: 200px; /* Set a fixed max width */
+    aspect-ratio: 1; /* Enforce square shape */
+    overflow: hidden; /* Ensure no overflow beyond the rounded corners */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    display: flex; /* Center the image inside */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for the images */
+.photo img {
+    width: 100%; /* Cover the container width */
+    height: 100%; /* Cover the container height */
+    object-fit: cover; /* Crop the image to fit the square */
+}
+
 
 
 .hours h2 {
