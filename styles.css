@@ -336,10 +336,10 @@ h4 {
 
 /* Footer container */
 .site-footer {
-    background-color: #fff8f5;
+    background-color: #c19d97;
     padding: 20px;
     text-align: center;
-    border-top: 2px solid #ccc;
+    border-top: 2px solid #FF4F3D;
     box-shadow: 0 8px 10px #FF4F3D;
     border-radius: 50px
 }
