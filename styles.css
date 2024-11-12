@@ -219,7 +219,7 @@ h3 {
     border: 1px solid #D9534F; /* Border color for menu items */
     box-shadow: 0 8px 10px #FF4F3D;
     border-radius: 75px
-    background-color: #ffffff; /* White background for individual items */
+    background-color: #ffffff /* White background for individual items */
 }
 
 h4 {
@@ -238,9 +238,13 @@ h4 {
     display: flex; /* Flexbox layout */
     justify-content: center; /* Center photos horizontally */
     gap: 10px; /* Space between photos */
-    padding: 20px;
-    background-color: #A3C12A; /* Light background */
-    border: 2px solid #ccc; /* Optional border */
+    padding: 3%;
+    margin: 8% 0; /* Spacing between individual items */
+    background-color: #A3C12A; 
+    border: 1px solid #FF4F3D; 
+    border-radius: 40px;
+    box-shadow: 0 6px 10px #FF4F3D;
+
 }
 
 /* Styling for each photo wrapper */
@@ -249,8 +253,8 @@ h4 {
     max-width: 200px; /* Set a fixed max width */
     aspect-ratio: 1; /* Enforce square shape */
     overflow: hidden; /* Ensure no overflow beyond the rounded corners */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 35px; /* Rounded corners */
+    box-shadow: 0 4px 6px #FF4F3D;
     display: flex; /* Center the image inside */
     align-items: center;
     justify-content: center;
